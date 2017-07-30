@@ -1,6 +1,6 @@
 # PID controller for autonomous driving
 
-
+[//]: # (Image References)
 [video1]: data/1 0 0.mp4 "Start the manual tuning "
 [video2]: data/0.5 0 0.mp4 "Half the Kp parameter due to oscillation"
 
