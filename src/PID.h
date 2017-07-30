@@ -10,12 +10,20 @@ public:
   double i_error;
   double d_error;
 
+  //double cte_;
+
   /*
   * Coefficients
   */ 
   double Kp;
   double Ki;
   double Kd;
+
+  /*
+   * Optimize parameters coefficient
+   */
+  bool b_optimize;
+
 
   /*
   * Constructor
