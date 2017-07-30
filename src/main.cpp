@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
   // TODO: Initialize the pid variable.
   double Kp, Ki, Kd;
   Kp = 0.15;
-  Ki = 0.0002;
-  Kd = 4.5;
+  Ki = 0.0001;
+  Kd = 4;
 
   if(argc == 4) {
     Kp = atof(argv[1]);
