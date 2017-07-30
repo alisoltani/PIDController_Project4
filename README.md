@@ -25,4 +25,4 @@ This parameter tracks the total error in previous time instances. By tracking pr
 ### Paraeter tuning
 In this work, manual project tuning was done as the efforts to utilize automatic techniques ran into issues when the car went out of track. The methodology to find parameters was as follows:
 
-* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscilling as can be seen in the following [here](data/1 0 0.mp4)
+* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscilling as can be seen in the following [link to my video result](./project_output.mp4) [here](data/1 0 0.mp4)
