@@ -30,10 +30,11 @@ This parameter tracks the total error in previous time instances. By tracking pr
 ### Parameter tuning
 In this work, manual project tuning was done as the efforts to utilize automatic techniques ran into issues when the car went out of track. The methodology to find parameters was as follows:
 
-* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscilling as can be seen in the following [video][video1]
+* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscillating, as can be seen in the following [video][video1]
 * Next the `Kp` parameter is halved, and tested again (as seen [here][video2]). This process is done until the car seems to be able to drive straight along the (non curved) path. The result is `Kp` ~ 0.125 [as seen here][video3]
 * After setting the `Kp` parameter, we can see that it still oscillates around curves, the `Kd` term is increased to 1 [as seen here][video4]. This process is continued until the oscillations are acceptable.
 * Finally, to help with sharp turns, the `Ki` parameter is increased slightly. This was done iteratively (staring from 0.0001) until the result was deemed satisfactory.
+* After setting all three paraemters, further manual fine tuning was done to reduce oscillations and improve performance around corners.
 
 The final result (when driving around at 30mph) is shown [here][video5], executed with `./pid 0.15 0.0004 4`.
 
