@@ -22,7 +22,7 @@ To build:
 The P paratemer is the main error correcting parameter in the PID controller. The cross-track-error (cte) is multiplied by this parameter, higher `Kp` values result in a faster responce time, but also oscillations around the middle of the track. 
 
 #### D (differential)
-This parameter is in charge of tracking abrubt changes, and is affects the derivative (in this case the difference between current cte and the previous cte). By penalyzing having different ctes in subsequent time instances, we help prevent overshooting and oscillations around the center of the track and approach in a more smoother fashion
+This parameter is in charge of tracking abrubt changes, and is affects the derivative (in this case the difference between current cte and the previous cte). By penalyzing having different ctes in subsequent time instances, we help prevent overshooting and oscillations around the center of the track and approach the middle of the track in a more smoother fashion.
 
 #### I (integral)
 This parameter tracks the total error in previous time instances. By tracking previous errors, it enables us to remove any possible biases when steering, for example when we think we are steering in a straight line but due to some errors we are actually not driving in a straight line.
