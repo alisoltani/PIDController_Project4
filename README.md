@@ -1,8 +1,4 @@
 # PID controller for autonomous driving
-
-[//]: # (Image References)
-
-[video1]: data/1 0 0.mp4 "Start the manual tuning "
 [video2]: data/0.5 0 0.mp4 "Half the Kp parameter due to oscillation"
 
 In this project, a PID controller was desigend to automatically keep a simulated car (from [here](https://github.com/udacity/self-driving-car-sim/releases) ) driving as close to the center of track as possible. In order to do so, hyper paramters for the p, i, and d componments of the PID controller were tuned manually. 
@@ -29,4 +25,4 @@ This parameter tracks the total error in previous time instances. By tracking pr
 ### Paraeter tuning
 In this work, manual project tuning was done as the efforts to utilize automatic techniques ran into issues when the car went out of track. The methodology to find parameters was as follows:
 
-* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscilling as can be seen in the following [here][video1]
+* First start by setting the I and D parameter values to zero, and P to 1. This resulted in the car oscilling as can be seen in the following [here][data/1 0 0.mp4]
